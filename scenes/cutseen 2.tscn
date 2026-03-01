@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dsnt50o2lx12w"]
+
+[ext_resource type="Texture2D" uid="uid://c0lnechh6p38x" path="res://225px-Book_and_Quill_Writing.png" id="1_p3dxa"]
+[ext_resource type="Texture2D" uid="uid://cnjpulrpqgc3n" path="res://Assets/sprites/knight.png" id="2_rb4qc"]
+[ext_resource type="Texture2D" uid="uid://c3djwt86bd1hl" path="res://d8b70331-9d9e-49b7-8573-6a053d3de35d-removebg-previewnew.png" id="3_p3dxa"]
+[ext_resource type="Script" uid="uid://cxlckc71d2qfc" path="res://scripts/button.gd" id="4_3emhj"]
+[ext_resource type="Texture2D" uid="uid://cb8ad5ct1e73v" path="res://image-removebg-preview.png" id="5_srbu1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig0kn"]
+atlas = ExtResource("2_rb4qc")
+region = Rect2(0, 0, 32, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf2km"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig0kn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1630636049]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1745103030]
+position = Vector2(-108, -10)
+scale = Vector2(4.322327, 3.7426112)
+texture = ExtResource("1_p3dxa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1033200294]
+position = Vector2(-58.15733, -62.0222)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=1354036634]
+position = Vector2(57.607857, -36.07107)
+scale = Vector2(0.27955624, 0.24984285)
+texture = ExtResource("3_p3dxa")
+
+[node name="Label2" type="Label" parent="Sprite2D/Sprite2D" unique_id=1930403495]
+offset_left = -369.931
+offset_top = -109.083374
+offset_right = -72.00003
+offset_bottom = -63.097244
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D" unique_id=1761792642]
+offset_left = -431.99994
+offset_top = -32.083344
+offset_right = -75.31033
+offset_bottom = 23.0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Sprite2D" unique_id=194748838]
+position = Vector2(-60.008186, 28.823463)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2005146710]
+position = Vector2(56.682426, 59.58407)
+scale = Vector2(0.30433652, 0.29321253)
+texture = ExtResource("3_p3dxa")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1578469883]
+position = Vector2(-58.8514, 72.10875)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Sprite2D" unique_id=608458862]
+position = Vector2(-59.97181, -19.260601)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D" unique_id=554572195]
+position = Vector2(55.294277, 12.023691)
+scale = Vector2(0.29009262, 0.2798907)
+texture = ExtResource("3_p3dxa")
+
+[node name="Button" type="Button" parent="." unique_id=1686669702]
+offset_left = -295.0
+offset_top = 404.0
+offset_right = 29.0
+offset_bottom = 463.0
+script = ExtResource("4_3emhj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=2074610624]
+position = Vector2(171.99998, 29.000023)
+scale = Vector2(1.06, 0.64000005)
+texture = ExtResource("5_srbu1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=5791941]
+position = Vector2(-74, -31)
+zoom = Vector2(0.75, 0.75)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

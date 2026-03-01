@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://2n7o7b74f55q"]
+
+[ext_resource type="Script" uid="uid://bmhsos1ucx6w2" path="res://scripts/helper.gd" id="1_1b23i"]
+[ext_resource type="Texture2D" uid="uid://b4snb6og46edr" path="res://Assets/sprites/Soldier-Idle.png" id="1_8avu8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b23i"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(0, 33, 100, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwlo1"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(100, 33, 100, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o31g5"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(200, 33, 100, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1iiyj"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(300, 33, 100, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl8xg"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(400, 33, 100, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76gdc"]
+atlas = ExtResource("1_8avu8")
+region = Rect2(500, 33, 100, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a8qjq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1b23i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwlo1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o31g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1iiyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yl8xg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76gdc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8avu8"]
+size = Vector2(100, 26)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2094869392]
+collision_mask = 2
+script = ExtResource("1_1b23i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1644608515]
+position = Vector2(5, 6.25)
+scale = Vector2(1.1, 1.3787879)
+sprite_frames = SubResource("SpriteFrames_a8qjq")
+autoplay = "default"
+frame_progress = 0.360608
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1574199899]
+position = Vector2(6, 3)
+shape = SubResource("RectangleShape2D_8avu8")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

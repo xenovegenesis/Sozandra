@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://hxx3qksseqn7"]
+
+[ext_resource type="Texture2D" uid="uid://c0lnechh6p38x" path="res://225px-Book_and_Quill_Writing.png" id="1_8wvt8"]
+[ext_resource type="Texture2D" uid="uid://cnjpulrpqgc3n" path="res://Assets/sprites/knight.png" id="2_uxoj2"]
+[ext_resource type="Texture2D" uid="uid://bub4droroygfc" path="res://Assets/sprites/h7YxAg.png" id="3_vmwbq"]
+[ext_resource type="Script" uid="uid://cxlckc71d2qfc" path="res://scripts/button.gd" id="4_vmwbq"]
+[ext_resource type="Texture2D" uid="uid://cb8ad5ct1e73v" path="res://image-removebg-preview.png" id="5_ig0kn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig0kn"]
+atlas = ExtResource("2_uxoj2")
+region = Rect2(0, 0, 32, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf2km"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig0kn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1630636049]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1745103030]
+position = Vector2(-108, -10)
+scale = Vector2(4.322327, 3.7426112)
+texture = ExtResource("1_8wvt8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1033200294]
+position = Vector2(-58.15733, -62.0222)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=1354036634]
+position = Vector2(60.29738, -37.707626)
+scale = Vector2(0.026018742, 0.026869327)
+texture = ExtResource("3_vmwbq")
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D" unique_id=636954222]
+offset_left = -4842.768
+offset_top = -167.80798
+offset_right = 3008.232
+offset_bottom = 508.39557
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "In the old abbey beyond the marsh
+he  means to spill her blood before midnight."
+
+[node name="Label2" type="Label" parent="Sprite2D/Sprite2D" unique_id=1461579436]
+offset_left = -4024.71
+offset_top = -953.39746
+offset_right = 40.0
+offset_bottom = -505.9098
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "Where is the priest who took your daughter?"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Sprite2D" unique_id=194748838]
+position = Vector2(-60.008186, 28.823463)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2005146710]
+position = Vector2(58.44654, 53.672417)
+scale = Vector2(0.026018742, 0.026869327)
+texture = ExtResource("3_vmwbq")
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D2" unique_id=1627901592]
+offset_left = -4744.957
+offset_top = -118.08687
+offset_right = -378.95703
+offset_bottom = 220.0153
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "Bring her back to me… or do not return at all."
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D2/Label" unique_id=508772365]
+layout_mode = 0
+offset_left = 640.2189
+offset_top = 715.9803
+offset_right = 5006.2188
+offset_bottom = 1264.9802
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "I will return—with your daughter, or with 
+the priest’s last prayer."
+
+[node name="Label2" type="Label" parent="Sprite2D/Sprite2D2" unique_id=1836953555]
+offset_left = -4753.849
+offset_top = -2067.144
+offset_right = 1298.1509
+offset_bottom = -1430.7172
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "He speaks of summoning a devil… 
+of trading her life for power."
+
+[node name="Label3" type="Label" parent="Sprite2D/Sprite2D2" unique_id=583333856]
+offset_left = -4113.6304
+offset_top = -1032.9504
+offset_right = -117.63037
+offset_bottom = -565.57446
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "Devils bargain with cowards. I bring steel."
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1578469883]
+position = Vector2(-58.8514, 72.10875)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Sprite2D" unique_id=608458862]
+position = Vector2(-59.97181, -19.260601)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D" unique_id=554572195]
+position = Vector2(58.4829, 5.053978)
+scale = Vector2(0.026018742, 0.026869327)
+texture = ExtResource("3_vmwbq")
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D4" unique_id=1687688114]
+offset_left = -4106.1357
+offset_top = -834.4658
+offset_right = 117.53125
+offset_bottom = -466.92993
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "Then midnight will find him on his knees."
+
+[node name="Button" type="Button" parent="." unique_id=1686669702]
+offset_left = -295.0
+offset_top = 404.0
+offset_right = 29.0
+offset_bottom = 463.0
+script = ExtResource("4_vmwbq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=2074610624]
+position = Vector2(171.99998, 29.000023)
+scale = Vector2(1.06, 0.64000005)
+texture = ExtResource("5_ig0kn")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=5791941]
+position = Vector2(-74, -31)
+zoom = Vector2(0.5, 0.5)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
