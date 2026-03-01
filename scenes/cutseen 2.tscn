@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://dsnt50o2lx12w"]
+
+[ext_resource type="Texture2D" uid="uid://c0lnechh6p38x" path="res://225px-Book_and_Quill_Writing.png" id="1_p3dxa"]
+[ext_resource type="Texture2D" uid="uid://cnjpulrpqgc3n" path="res://Assets/sprites/knight.png" id="2_rb4qc"]
+[ext_resource type="Texture2D" uid="uid://c3djwt86bd1hl" path="res://d8b70331-9d9e-49b7-8573-6a053d3de35d-removebg-previewnew.png" id="3_p3dxa"]
+[ext_resource type="Script" uid="uid://cxlckc71d2qfc" path="res://scripts/button.gd" id="4_3emhj"]
+[ext_resource type="Texture2D" uid="uid://cb8ad5ct1e73v" path="res://image-removebg-preview.png" id="5_srbu1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig0kn"]
+atlas = ExtResource("2_rb4qc")
+region = Rect2(0, 0, 32, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf2km"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig0kn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1630636049]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1745103030]
+position = Vector2(-108, -10)
+scale = Vector2(4.322327, 3.7426112)
+texture = ExtResource("1_p3dxa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1033200294]
+position = Vector2(-58.15733, -62.0222)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=1354036634]
+position = Vector2(57.607857, -36.07107)
+scale = Vector2(0.27955624, 0.24984285)
+texture = ExtResource("3_p3dxa")
+
+[node name="Label2" type="Label" parent="Sprite2D/Sprite2D" unique_id=1930403495]
+offset_left = -367.4482
+offset_top = -102.6667
+offset_right = 7.5517883
+offset_bottom = -56.680573
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "The ritual ends here. She leaves with me."
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D" unique_id=1761792642]
+offset_left = -441.93097
+offset_top = -25.66668
+offset_right = 182.06903
+offset_bottom = 10.333321
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "You dare defy forces beyond your understanding?"
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D/Label" unique_id=547647461]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.53000003
+anchor_bottom = 5.0940003
+offset_left = 64.55172
+offset_top = 83.41669
+offset_right = 214.83173
+offset_bottom = 11.254913
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "    I understand enough—
+no innocent life will fuel your darkness."
+
+[node name="Label2" type="Label" parent="Sprite2D/Sprite2D/Label" unique_id=1326993200]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.032
+anchor_bottom = 0.319
+offset_left = 14.896545
+offset_top = 198.91673
+offset_right = 333.4113
+offset_bottom = 241.97441
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "You think steel can silence a demon’s call?"
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D/Label/Label2" unique_id=1479749249]
+layout_mode = 0
+offset_left = 49.655167
+offset_top = 97.31946
+offset_right = 442.65515
+offset_bottom = 212.81949
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 17
+text = "Steel, faith, and will are more than enough for you."
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D/Label/Label2/Label" unique_id=644838585]
+layout_mode = 0
+offset_left = -46.344833
+offset_top = 91.972244
+offset_right = 325.65515
+offset_bottom = 118.972244
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "The demon will rise, with or without her!"
+
+[node name="Label" type="Label" parent="Sprite2D/Sprite2D/Label/Label2/Label/Label" unique_id=2081823738]
+layout_mode = 0
+offset_left = 66.20688
+offset_top = 81.27781
+offset_right = 364.96548
+offset_bottom = 107.27781
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Then I’ll be waiting when it tries."
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Sprite2D" unique_id=194748838]
+position = Vector2(-60.008186, 28.823463)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2005146710]
+position = Vector2(56.682426, 59.58407)
+scale = Vector2(0.30433652, 0.29321253)
+texture = ExtResource("3_p3dxa")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1578469883]
+position = Vector2(-58.8514, 72.10875)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Sprite2D" unique_id=608458862]
+position = Vector2(-59.97181, -19.260601)
+sprite_frames = SubResource("SpriteFrames_lf2km")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D" unique_id=554572195]
+position = Vector2(55.294277, 12.023691)
+scale = Vector2(0.29009262, 0.2798907)
+texture = ExtResource("3_p3dxa")
+
+[node name="Button" type="Button" parent="." unique_id=1686669702]
+offset_left = -295.0
+offset_top = 404.0
+offset_right = 29.0
+offset_bottom = 463.0
+script = ExtResource("4_3emhj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=2074610624]
+position = Vector2(171.99998, 29.000023)
+scale = Vector2(1.06, 0.64000005)
+texture = ExtResource("5_srbu1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=5791941]
+position = Vector2(-74, -31)
+zoom = Vector2(0.75, 0.75)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
