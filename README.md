@@ -1,0 +1,3 @@
+Play as a brave knight in a simple, classic retro adventure. A dark priest has taken a maiden to his temple, where she is to be sacrificed in a grim ritual. Your mission is clear: enter the temple, confront the priest, and rescue her before it is too late.
+Fight your way through straightforward challenges and a handful of enemies standing in your path. With basic combat and clean, old-school gameplay, every step brings you closer to the final encounter. There are no sprawling worlds or complicated systems—just you, your sword, and the determination to save the damsel.
+Can you defeat the priest and stop the sacrifice in time.
